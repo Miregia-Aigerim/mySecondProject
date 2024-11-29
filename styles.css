@@ -8,19 +8,24 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('img/hero-bg.webp') no-repeat center center/cover;
-  background-size: cover; /* Makes the image cover the entire background */
-  background-position: center center; /* Ensures the image is centered */
-  height: 100vh; /* Makes the hero section take up the entire viewport height */
-  color: black;
-  text-align: center;
-  padding: 50px 20px;
+  position: relative;
+  background-image: url('path-to-your-image.jpg');
+  background-size: cover; /* Растягиваем картинку по размеру секции */
+  background-position: center center; /* Центрируем картинку */
+  height: 100vh; /* Высота секции на весь экран */
 }
 
-.hero-content {
-  max-width: 600px;
-  margin: 0 auto;
+.hero .text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрируем текст по горизонтали и вертикали */
+  color: white; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  font-size: 2rem; /* Размер шрифта */
+  font-weight: bold; /* Жирное начертание */
 }
+
 
 .bread-list {
   padding: 20px;
