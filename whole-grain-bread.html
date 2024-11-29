@@ -4,126 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Whole-Grain Bread Recipe</title>
-  <!-- Подключение Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <!-- Подключение CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Arial:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Подключаем Bootstrap -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Герой-секция -->
-  <section class="hero">
-    <div>
-      <h1>Whole-Grain Bread</h1>
-      <p>A wholesome recipe for delicious and healthy homemade bread!</p>
-    </div>
-  </section>
-
-  <!-- Секция навигации "Previous" и "Next" -->
-  <section class="navigation py-3">
+  <!-- Header Section with Navigation Buttons -->
+  <header class="py-3 border-bottom bg-light">
     <div class="container d-flex justify-content-between align-items-center">
-      <!-- Кнопка "Предыдущий рецепт" -->
+      <!-- Previous Recipe Button -->
       <a href="olive-bread.html" class="btn btn-outline-secondary">
         <i class="bi bi-arrow-left"></i> Previous
       </a>
 
-      <!-- Ссылка "Home" -->
+      <!-- Home Link -->
       <a href="index.html" class="text-decoration-none fs-4 fw-bold text-dark">Home</a>
 
-      <!-- Кнопка "Следующий рецепт" -->
+      <!-- Next Recipe Button -->
       <a href="sourdough-bread.html" class="btn btn-outline-secondary">
         Next <i class="bi bi-arrow-right"></i>
       </a>
     </div>
-  </section>
+  </header>
 
-  <!-- Секция рецепта -->
-  <section class="recipe-section container">
-    <div class="row">
-      <!-- Ингредиенты -->
-      <div class="col-md-6">
-        <h2>Ingredients</h2>
-        <ul class="list-group">
-          <li class="list-group-item">450g whole-grain flour</li>
-          <li class="list-group-item">50g white flour</li>
-          <li class="list-group-item">1 packet dry yeast</li>
-          <li class="list-group-item">1 teaspoon salt</li>
-          <li class="list-group-item">300ml warm water</li>
-          <li class="list-group-item">1 tablespoon honey</li>
-        </ul>
+  <!-- Recipe Section -->
+  <section class="recipe py-5">
+    <div class="container">
+      <h1 class="text-center">Whole-Grain Bread Recipe</h1>
+      <p class="text-center text-muted">A healthy, hearty bread made with whole-grain flour for a wholesome taste!</p>
+
+      <!-- Ingredients Section -->
+      <h2>Ingredients</h2>
+      <ul>
+        <li>450g whole-grain flour</li>
+        <li>50g white flour</li>
+        <li>1 packet dry yeast</li>
+        <li>1 teaspoon salt</li>
+        <li>300ml warm water</li>
+        <li>1 tablespoon honey</li>
+      </ul>
+
+      <!-- Instructions Section -->
+      <h2>Instructions</h2>
+      <ol>
+        <li>Combine warm water, yeast, and honey. Let it activate for 5 minutes.</li>
+        <li>Mix in flours and salt. Knead until smooth.</li>
+        <li>Let the dough rise for 1 hour, then shape it into a loaf.</li>
+        <li>Bake for 25-30 minutes at 200°C (390°F).</li>
+      </ol>
+
+      <!-- Bread Image -->
+      <div class="text-center">
+        <img src="img/bread5.jpg" alt="Whole-Grain Bread" class="img-fluid rounded shadow-lg">
       </div>
-
-      <!-- Инструкции -->
-      <div class="col-md-6">
-        <h2>Instructions</h2>
-        <div class="accordion" id="instructionsAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="stepOneHeader">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#stepOne" aria-expanded="true" aria-controls="stepOne">
-                Step 1
-              </button>
-            </h2>
-            <div id="stepOne" class="accordion-collapse collapse show" aria-labelledby="stepOneHeader">
-              <div class="accordion-body">
-                Combine warm water, yeast, and honey. Let it activate for 5 minutes.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="stepTwoHeader">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stepTwo" aria-expanded="false" aria-controls="stepTwo">
-                Step 2
-              </button>
-            </h2>
-            <div id="stepTwo" class="accordion-collapse collapse" aria-labelledby="stepTwoHeader">
-              <div class="accordion-body">
-                Mix in flours and salt. Knead until smooth.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="stepThreeHeader">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stepThree" aria-expanded="false" aria-controls="stepThree">
-                Step 3
-              </button>
-            </h2>
-            <div id="stepThree" class="accordion-collapse collapse" aria-labelledby="stepThreeHeader">
-              <div class="accordion-body">
-                Let the dough rise for 1 hour, then shape it into a loaf.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="stepFourHeader">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stepFour" aria-expanded="false" aria-controls="stepFour">
-                Step 4
-              </button>
-            </h2>
-            <div id="stepFour" class="accordion-collapse collapse" aria-labelledby="stepFourHeader">
-              <div class="accordion-body">
-                Bake for 25-30 minutes at 200°C (390°F).
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Изображение хлеба -->
-    <div class="text-center">
-      <img src="img/bread5.jpg" alt="Whole Grain Bread" class="img-fluid shadow">
     </div>
   </section>
 
-  <!-- Подвал -->
-  <footer>
-    <p>&copy; 2024 Wholesome Recipes. All rights reserved.</p>
-  </footer>
-
-  <!-- Подключение Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Подключение иконок Bootstrap для стрелок -->
+  <!-- Bootstrap JS and Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 </body>
 </html>
