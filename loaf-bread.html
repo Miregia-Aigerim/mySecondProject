@@ -5,34 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loaf Bread Recipe</title>
   <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Arial:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Подключаем Bootstrap -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Loaf Bread Recipe</h1>
-    <a href="index.html">Back to Recipes</a>
+  <!-- Header Section with Navigation Buttons -->
+  <header class="py-3 border-bottom bg-light">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Кнопка "Предыдущий рецепт" -->
+      <a href="previous-recipe.html" class="btn btn-outline-secondary">
+        <i class="bi bi-arrow-left"></i> Previous
+      </a>
+
+      <!-- Ссылка "Home" -->
+      <a href="index.html" class="text-decoration-none fs-4 fw-bold text-dark">Home</a>
+
+      <!-- Кнопка "Следующий рецепт" -->
+      <a href="next-recipe.html" class="btn btn-outline-secondary">
+        Next <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
   </header>
 
-  <section class="recipe">
-    <h2>Ingredients</h2>
-    <ul>
-      <li>500g bread flour</li>
-      <li>1 packet dry yeast</li>
-      <li>1 teaspoon salt</li>
-      <li>300ml warm milk</li>
-      <li>2 tablespoons butter</li>
-    </ul>
+  <!-- Recipe Section -->
+  <section class="recipe py-5">
+    <div class="container">
+      <h1 class="text-center">Loaf Bread Recipe</h1>
+      <p class="text-center text-muted">A soft and fluffy loaf of bread, perfect for sandwiches or to enjoy fresh from the oven.</p>
 
-    <h2>Instructions</h2>
-    <ol>
-      <li>In a bowl, combine yeast, salt, and flour. Add warm milk and butter, and knead for 10 minutes.</li>
-      <li>Let the dough rise for 1 hour, then shape it into a loaf.</li>
-      <li>Preheat the oven to 180°C (350°F) and bake for 25-30 minutes.</li>
-    </ol>
+      <!-- Ingredients Section -->
+      <h2>Ingredients</h2>
+      <ul>
+        <li>500g bread flour</li>
+        <li>1 packet dry yeast</li>
+        <li>1 teaspoon salt</li>
+        <li>300ml warm milk</li>
+        <li>2 tablespoons butter</li>
+      </ul>
 
-    <img src="img/bread3.jpg" alt="Loaf Bread">
+      <!-- Instructions Section -->
+      <h2>Instructions</h2>
+      <ol>
+        <li>In a bowl, combine yeast, salt, and flour. Add warm milk and butter, and knead for 10 minutes.</li>
+        <li>Let the dough rise for 1 hour, then shape it into a loaf.</li>
+        <li>Preheat the oven to 180°C (350°F) and bake for 25-30 minutes.</li>
+      </ol>
+
+      <!-- Bread Image -->
+      <div class="text-center">
+        <img src="img/bread3.jpg" alt="Loaf Bread" class="img-fluid rounded">
+      </div>
+    </div>
   </section>
 
+  <!-- Подключение Bootstrap JS и Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>
