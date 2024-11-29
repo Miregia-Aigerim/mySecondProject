@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whole-Grain Bread Recipe</title>
+  <!-- Подключение Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Arial:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Навигационная панель -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Recipe Book</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Главный заголовок -->
+  <header class="bg-light py-5 text-center">
+    <h1 class="display-4">Whole-Grain Bread Recipe</h1>
+    <p class="lead">Healthy, hearty, and delicious homemade bread!</p>
+    <a href="index.html" class="btn btn-primary">Back to Recipes</a>
+  </header>
+
+  <!-- Контент с рецептом -->
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Ingredients</h2>
+        <ul class="list-group mb-4">
+          <li class="list-group-item">450g whole-grain flour</li>
+          <li class="list-group-item">50g white flour</li>
+          <li class="list-group-item">1 packet dry yeast</li>
+          <li class="list-group-item">1 teaspoon salt</li>
+          <li class="list-group-item">300ml warm water</li>
+          <li class="list-group-item">1 tablespoon honey</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <h2>Instructions</h2>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Combine warm water, yeast, and honey. Let it activate for 5 minutes.</li>
+          <li class="list-group-item">Mix in flours and salt. Knead until smooth.</li>
+          <li class="list-group-item">Let the dough rise for 1 hour, then shape it into a loaf.</li>
+          <li class="list-group-item">Bake for 25-30 minutes at 200°C (390°F).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Изображение хлеба -->
+    <div class="text-center my-5">
+      <img src="whole-grain-bread.jpg" class="img-fluid rounded shadow" alt="Whole Grain Bread">
+    </div>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Recipe Book | All Rights Reserved</p>
+  </footer>
+
+  <!-- Подключение Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
