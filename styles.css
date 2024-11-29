@@ -9,6 +9,9 @@ body {
 /* Hero Section */
 .hero {
   background: url('img/hero-bg.webp') no-repeat center center/cover;
+  background-size: cover; /* Makes the image cover the entire background */
+  background-position: center center; /* Ensures the image is centered */
+  height: 100vh; /* Makes the hero section take up the entire viewport height */
   color: black;
   text-align: center;
   padding: 50px 20px;
